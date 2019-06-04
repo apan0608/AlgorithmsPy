@@ -158,7 +158,6 @@ class UndirectedGraph():
             for adj in adjenctNodes:
                 self.depthFirstSearchRecursive(adj, visited)
 
-
     def getNotVisited(self, node: int, visited: list) -> list:
         adjancent = self.getAdjancentNodes(node)
         return [node for node in adjancent if visited[self.getIndex(node)] == False]
